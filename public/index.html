@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOA 24/25</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.12.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <img src="images/amcisa.png" alt="AMCISA Logo">
+        <h1>AMCISA FOA 24/25</h1>
+    </header>
+    
+    <nav class="navigation-links">
+      <a href="#swiper-section">Main Committee</a>
+      <a href="#og">Orientation Groups</a>
+      <a href="#schedule">Camp Schedule</a>
+      <a href="#cheers">Cheers List</a>
+      <a href="#lyrics">Camp Song</a>
+      <a href="#sponsors">Sponsor</a>
+    </nav>
+
+    <main>
+        <section id="swiper-section">
+        <h2>Main Committee</h2>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/logo.PNG" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/1.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/2.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/3.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/4.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/5.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/6.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/7.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/8.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/9.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/10.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/11.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/12.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/13.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/14.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/15.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/16.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/17.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/18.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/19.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/20.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/21.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/22.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/23.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/24.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/25.jpeg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture">
+                  <img src="images/maincom/26.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </section>
+        
+        <section id="og">
+          <h2>Orientation Groups</h2>
+        </section>
+        <section id="image-grid">
+          <div class="grid-container">
+              <div class="grid-item">
+                  <img src="images/yejiangling.png" alt="夜降灵">
+                  <div class="overlay"></div>
+              </div>
+              <div class="grid-item">
+                  <img src="images/yuexiake_2.png" alt="月下客">
+                  <div class="overlay-yuexiake"></div>
+              </div>
+              <div class="grid-item">
+                  <img src="images/lanyinyuan_2.png" alt="蓝茵源">
+                  <div class="overlay-lanyinyuan"></div>
+              </div>
+              <div class="grid-item">
+                  <img src="images/chuxiangyu.jpeg" alt="初相域">
+                  <div class="overlay"></div>
+              </div>
+              <div class="grid-item">
+                  <img src="images/dawenxi.jpeg" alt="达玟曦">
+                  <div class="overlay"></div>
+              </div>
+              <div class="grid-item">
+                  <img src="images/canhuoxing_1.png" alt="璨火星">
+                  <div class="overlay-canhuoxing"></div>
+              </div>
+          </div>
+        </section>
+    
+        <section id="schedule">
+          <h2>Camp Schedule</h2>
+          <div class="day" id="day1">
+              <h3>Day 1</h3>
+              <p class="time">1400 - 1445</p>
+              <p>开幕</p>
+              <p class="time">1445 - 1800</p>
+              <p>幻境启航</p>
+              <p class="time">1900 - 2230</p>
+              <p>秘案追踪</p>
+          </div>
+          <div class="day" id="day2">
+              <h3>Day 2</h3>
+              <p class="time">0715 - 1300</p>
+              <p>烈焰竞技</p>
+              <p class="time">1430 - 1700</p>
+              <p>商贾掠夺</p>
+              <p class="time">1830 - 2130</p>
+              <p>步步为营</p>
+          </div>
+          <div class="day" id="day3">
+              <h3>Day 3</h3>
+              <p class="time">1345 - 1630</p>
+              <p>密林仙踪</p>
+              <p class="time">1930 - 2345</p>
+              <p>柳暗花明</p>
+          </div>
+          <div class="day" id="day4">
+              <h3>Day 4</h3>
+              <p class="time">1430 - 2300</p>
+              <p>夜晚去浪</p>
+          </div>
+          <div class="day" id="day5">
+              <h3>Day 5</h3>
+              <p class="time">0800 - 1200</p>
+              <p>阴云密布</p>
+              <p class="time">1330 - 1700</p>
+              <p>闭幕</p>
+          </div>
+        </section>
+        <section id="cheers">
+          <h2>Cheers List</h2>
+          <ul>
+            <li>
+              <h3>3 Cheers</h3>
+              <p><b>A：</b>3 Cheers & 3 Cheers & 3 Cheers for XXX</p>
+              <p><b>A：</b>Hip Hip! (x3)</p>
+              <p><b>其他人：</b>Hurray~ (x3)</p>
+              <hr>
+              <p><b>A：</b>3 Cheers & 3 Cheers & 3 Cheers for XXX</p>
+              <p><b>其他人：</b>Huga saga Huga saga HugaHugaHuga saga (x3)</p>
+            </li>
+            <li>
+              <h3>Give me X cheers</h3>
+              <p><b>A：</b>Give me 1 cheer</p>
+              <p><b>其他人：</b>Cheer!</p>  
+              <p><b>A：</b>Give me 2 cheer</p>  
+              <p><b>其他人：</b>Cheer! Cheer!</p>  
+              <p><b>A：</b>Give me 3 cheer</p>   
+              <p><b>其他人：</b>Cheer! Cheer! Cheer!</p>  
+              <p><b>全部人：</b>cheer cheer / cheer cheer cheer / cheer cheer cheer cheer / cheer cheer</p>
+            </li>
+            <li>
+              <h3>旗帜 Cheer</h3>
+              <p>看我们的队伍 雄壮威武</p>
+              <p>听我们的歌声 响彻云霄</p>  
+              <p>看我们的旗帜 随风飘扬</p>   
+              <p>Check it out !!! yeah!! (x2) Oooo..... XXX</p>
+            </li>
+            <li>
+              <h3>Victory Cheer</h3>
+              <p>It’s a V it’s a V it’s a VIC</p>
+              <p>It’s a C it’s a C it’s a CTO </p>
+              <p>It’s a O it’s a O it’s a ORY </p>  
+              <p>V-I-C-T-O-R-Y victory victory is our pride!</p>
+            </li>
+            <li>
+              <h3>爱的Ambulance</h3>
+              <p>拍(x2) 拍(x3) 拍(x4) 拍拍!</p>
+              <p>Bibo Bibo 送他走 送他走</p>
+            </li>
+            <li>
+              <h3>爱的很不错（配合动作）</h3>
+              <p>拍(x2) 拍(x3) 拍(x4) 拍拍!</p>
+              <p>你真的很不错 你真的很不错</p> 
+              <p>你 真的(x5) 很不错</p>  
+              <p>你上上也不错 你下下也不错</p>  
+              <p>你上上下下左左右右前前后后</p>   
+              <p>真的真的真的真的真的很不错</p>  
+            </li>
+            <li>
+              <h3>Bomb Bomb Cheer (Bomb别人)</h3>
+              <p>XXX Bomb!(x2) XXX Bomb 完 YYY Bomb!</p>
+              <p>YYY Bomb!(x2) YYY Bomb 完 ZZZ Bomb!</p>
+            </li>
+            <li>
+              <h3>Who are we cheers</h3>
+              <p>Who are(x3) we?</p>
+              <p>We are(x3) who? </p>  
+              <p>Who are we? We are who? </p>  
+              <p>We are(x3) XXX We are the best!</p>  
+            </li>
+            <li>
+              <h3>Jiak Peng/吃饭cheer</h3>
+              <p>饿了,饿了 (拍拍)</p>
+              <p>渴了,渴了 (拍拍)</p>   
+              <p>饿了,渴了 (拍拍)</p>   
+              <p>渴了,饿了 (拍拍)</p>   
+              <p>Jigelaka bi ah bi ah x2 Jiak! （有动作）</p>  
+              <hr>
+              <p><b>Senior shout: </b>“Junior Jiak ”</p>
+              <p><b>Junior shout: </b>“Senior Jiak ”</p> 
+              <p><b>Together: </b>Junior Senior Jiak Jiak Jiak</p>
+            </li>
+            <li>
+              <h3>Everywhere we go（走路 cheer）</h3>
+              <p>Everywhere we go (×2)</p> 
+              <p>People want to know (×2)</p>
+              <p>Who we are (×2)</p>
+              <p>Where we come from (×2)</p> 
+              <p>So we tell them (×2)</p> 
+              <p>We are from XXX (×2)</p> 
+              <p>Mighty migthy XXX (×2)</p> 
+              <p>Super super XXX (×2)</p> 
+              <p>Champion champion XXX (×2)</p> 
+              <p>OOoooOO! XXX !!!</p>
+            </li>
+            <li>
+              <h3>输了的cheer</h3>
+              <p>It’s ok!</p> 
+              <p>It’s alright!</p> 
+              <p>XXX fight fight fight!!!</p>
+            </li>
+            <li>
+              <h3>V ~ Bomb</h3>
+              <p>We are we are we are bomb</p>
+              <p>Bomb are bomb are bomb are we</p>   
+              <p>We are bomb Bomb are we</p>   
+              <p>We are ~ We are ~ We are ~ XXX</p>
+            </li>
+            <li>
+              <h3>（姐妹一起）Alamak Wasapa 劈里啪啦爱不怕</h3>
+              <p><b>XX OG：</b>YY你怕不怕?</p>
+              <p><b>YY OG：</b>不怕不怕 我不怕</p> 
+              <p><b>YY OG：</b>XX 你怕不怕?</p>
+              <p><b>XX OG：</b>不怕不怕 我不怕</p> 
+              <p><b>Together：</b>天不怕,地不怕，XXYY 杀杀杀!</p>
+            </li>
+            <li>
+              <h3>迟到cheer</h3>
+              <p><b>等到sien的人:</b></p>
+              <p>一二三四五</p> 
+              <p>我们等得很辛苦</p> 
+              <p>一二三四五六七</p> 
+              <p>我们等得很生气</p> 
+              <p>一二三四五六七八九</p> 
+              <p>还要我们等多久</p> 
+              <p><b>迟到的人:</b></p>
+              <p>爱等多久等多久 我们都是好朋友</p>
+            </li>
+          </ul>
+        </section>
+        
+        <section id="lyrics">
+          <h2>Camp Song</h2>
+          <div class="lyrics-content">
+            <p>炽 是无尽黑暗中的明灯</p>
+            <p>燃烧点亮希望予自己人</p>
+            <p>热血沸腾 烈焰雄起点火煽风</p>
+            <p>燦烂火焰星光 耀眼启程</p>
+            <div class="line-spacing"></div>
+            <p>湛 清澈却不再单纯天真</p>
+            <p>试过方知能否抵抗塞壬</p>
+            <p>蛊惑歌声 直达紧扎血肉心根</p>
+            <p>蔚蓝沧茵缘分 通向永恒</p>
+            <div class="line-spacing"></div>
+            <p>夜已深 梦已沉</p>
+            <p>打开了德古拉之坟</p>
+            <p>尖牙刺入冰冷 却喊不了疼</p>
+            <p>夜降灵 暗中魂 常伴着星辰</p>
+            <p>各族互相抗衡</p>
+            <p>高声呼喊 必胜必胜必胜</p>
+            <div class="line-spacing"></div>
+            <p>而如今 六大势力 齐聚一方天地</p>
+            <p>是决出一方胜利 或天下一统的序曲</p>
+            <p>窥探那神秘人 未知的秘密</p>
+            <p>声望权力 在剑拔弩张间升起</p>
+            <div class="line-spacing"></div>
+            <p>曦 光朝霞仙境的守护者</p>
+            <p>幽深林间创造无尽可能</p>
+            <p>土地寸分 皆有大地母亲恩泽</p>
+            <p>齐达温暖曦光 和谐共生</p>
+            <div class="line-spacing"></div>
+            <p>域 古老神秘像覆盖了尘</p>
+            <p>试炼方知能否破咒缚身</p>
+            <p>古老咒文 直击灵魂紧锁心门</p>
+            <p>初识相见古域 定下永恒</p>
+            <div class="line-spacing"></div>
+            <p>月垂挂 影无声</p>
+            <p>刀光闪烁划过利刃</p>
+            <p>面具之下瞳仁 漠如冰之冷</p>
+            <p>圆月下 映侠客 与黑夜同程</p>
+            <p>各族互相抗衡</p>
+            <p>高声呼喊 必胜必胜必胜</p>
+            <div class="line-spacing"></div>
+            <p>而如今 六大势力 齐聚一方天地</p>
+            <p>是决出一方胜利 或天下一统的序曲</p>
+            <p>窥探那神秘人 未知的秘密</p>
+            <p>声望权力 在剑拔弩张间升起</p>
+            <div class="line-spacing"></div>
+            <p>风云变幻 乱世将至 英雄纷起</p>
+            <p>千军万马相遇 于战场中寻觅</p>
+            <p>终将揭晓 天命所归的传奇</p>
+            <p>用信念铸利器 拨开黑暗迎接晨曦</p>
+            <div class="line-spacing"></div>
+            <p>史诗级 乱世战局 流传几世纪</p>
+            <p>神话传奇 就在炽湛夜曦 域影之一</p>
+            <p>待领受天命</p>
+            <p>万物静谧 等候命运指引</p>
+            <p>立秋之时相聚 迎来结局尘埃落定</p>
+          </div>
+          <div class="audio-controls">
+            <audio id="audio" controls>
+              <source src="CampSong.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p></p>
+          </div>
+        </section>
+        
+
+        <section id="sponsors">
+          <h2>Sponsor</h2>
+          <div class="sponsor-container">
+              <div class="sponsor">
+                  <img src="images/inscape.png" alt="Inscape Logo">
+                  <p class="sponsor-name">Inscape</p>
+              </div>
+          </div>
+        </section>
+      
+
+        <button id="notification-button" style="position: fixed; top: 10px; right: 10px; padding: 10px; background: none; border: none; cursor: pointer;">
+          <span class="material-icons" style="font-size: 30px; color:rgb(222, 34, 40);">notifications</span>
+        </button>
+        <div id="notification-box">
+          <span id="close-icon" class="material-icons">close</span>
+          <p id="notification-text">我们8月2日见！</p>
+          <p id="notification-text">8月4日请一定要带Bandana！</p>
+          <p id="notification-text">8月6日请一定要带Lanyard！</p>
+          <p id="notification-text">服装要求：</p>
+          <p id="notification-text">8月5日：去海边的衣服（深色衣服）</p>
+          <p id="notification-text">8月6日：营服</p>
+      </div>
+</button>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+            console.error(e);
+            loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+
+      /*document.getElementById('music-control').addEventListener('click', function() {
+          var audio = document.getElementById('background-music');
+          var icon = document.getElementById('music-icon');
+        
+          if (audio.paused) {
+              audio.play();
+              icon.textContent = 'pause'; // Change icon to pause
+          } else {
+              audio.pause();
+              icon.textContent = 'play_arrow'; // Change icon to play
+          }
+      });*/
+      
+      document.addEventListener('DOMContentLoaded', function() {
+          var notificationBox = document.getElementById('notification-box');
+          var notificationText = document.getElementById('notification-text');
+
+          if (notificationText.textContent.trim()) {
+              notificationBox.style.display = 'block';
+          }
+      });
+
+      document.getElementById('notification-button').addEventListener('click', function() {
+          var notificationBox = document.getElementById('notification-box');
+          var notificationText = document.getElementById('notification-text');
+
+          if (!notificationText.textContent.trim()) {
+             notificationText.textContent = "No notifications";
+          }
+
+          if (notificationBox.style.display === 'none' || notificationBox.style.display === '') {
+              notificationBox.style.display = 'block';
+          } else {
+             notificationBox.style.display = 'none';
+          }
+      });
+
+      document.getElementById('close-icon').addEventListener('click', function() {
+          var notificationBox = document.getElementById('notification-box');
+          notificationBox.style.display = 'none';
+      });
+      
+      /*document.addEventListener('DOMContentLoaded', function() {
+          const images = document.querySelectorAll('.grid-item img');
+          const overlays = document.querySelectorAll('.overlay');
+          const originalTexts = {};
+          const meanings = [
+              "the night approaches",
+              "phantom under the moon",
+              "blue ties",
+              "nice to meet you",
+              "Mona Lisa",
+              "clash of stars"
+          ];
+          overlays.forEach((overlay, index) => {
+              originalTexts[index] = overlay.textContent;
+          });
+        
+          function toggleOverlayText(index) {
+              const overlay = overlays[index];
+              if (overlay.textContent === meanings[index]) {
+                  overlay.textContent = originalTexts[index];
+              } else {
+                  overlay.textContent = meanings[index];
+              }
+          }
+        
+          images.forEach((image, index) => {
+              image.addEventListener('click', function() {
+                  toggleOverlayText(index);
+              });
+          });
+        
+          overlays.forEach((overlay, index) => {
+              overlay.addEventListener('click', function() {
+                  toggleOverlayText(index);
+              });
+          });
+      });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.grid-item img');
+        const overlays = document.querySelectorAll('.overlay');
+
+        function enlargeElement(element) {
+            element.classList.toggle('enlarged');
+            setTimeout(() => {
+                element.classList.remove('enlarged');
+            }, 100); // Adjust the delay time (in milliseconds) as needed
+        }
+
+        images.forEach((image, index) => {
+            image.addEventListener('click', function() {
+                enlargeElement(image);
+            });
+        });
+
+        overlays.forEach((overlay, index) => {
+            overlay.addEventListener('click', function() {
+                enlargeElement(images[index]);
+            });
+        });
+    });*/
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const days = document.querySelectorAll('.day');
+
+            days.forEach(day => {
+                const image = day.querySelector('img');
+                const paragraphs = day.querySelectorAll('p');
+                const dayHeader = day.querySelector('h3');
+            
+                day.addEventListener('click', function() {
+                    paragraphs.forEach(paragraph => {
+                        paragraph.classList.toggle('show');
+                    });
+                    dayHeader.classList.toggle('hidden'); // Toggle the 'hidden' class on the day header
+                    day.classList.toggle('enlarged'); // Toggle the 'enlarged' class on the day div
+                    setTimeout(() => {
+                        day.classList.remove('enlarged'); // Remove the 'enlarged' class after 100ms
+                    }, 100);
+                });
+            });
+        });
+
+    </script>
+    <script src="swiper-config.js"></script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(18, 67, 125);
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .navigation-links a {
+    margin: 3px 0; /* Space between links */
+    text-decoration: none;
+    color: #007aff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .navigation-links a:hover {
+    color: #005bb5;
+  }
+  
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#image-grid {
+    background-image: url('images/background1.png'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0; /* Add padding to give some space around the content */
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 5px;
+    max-width: 800px; /* Limit the width of the grid container */
+    width: 100%; /* Ensure it takes full available width */
+}
+
+.grid-item {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-top: 100%; /* Aspect ratio 4:3 */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the grid items */
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Text outline */
+    border-radius: 5px;
+}
+
+.overlay-yuexiake {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Text outline */
+    border-radius: 5px;
+}
+
+.overlay-lanyinyuan {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Text outline */
+    border-radius: 5px;
+}
+
+.overlay-canhuoxing {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Text outline */
+    border-radius: 5px;
+}
+
+.enlarged {
+    transform: scale(1.02); /* Increase the scale as needed */
+    transition: transform 0.1s ease-in-out; /* Smooth transition */
+    z-index: 10; /* Ensure the enlarged element is on top */
+}
+
+h2 {
+    color: #007aff;
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 2px solid #89c1eb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.day h3 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.day p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: none; /* Hide the <p> elements by default */
+}
+
+.day p.show {
+    display: block; /* Show the <p> elements when the 'show' class is applied */
+}
+
+.hidden {
+    display: none;
+}
+
+
+.day {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 70vh; /* Make sure the background covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-blend-mode: overlay; /* Add blend mode */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+#day1 {
+    background-image: url('images/r_universe.JPG');
+    background-position: center;
+}
+
+#day1 p {
+    margin: 5px 0; /* Adjusts margin between all paragraphs */
+}
+  
+#day1 p:nth-of-type(2) {
+    margin-bottom: 40px; /* Increases margin after "Ice Breaking Games" */
+}
+  
+#day1 p:nth-of-type(4) {
+    margin-bottom: 40px;; /* Removes margin before "晚上" */
+}
+
+#day2 {
+    background-image: url('images/middle_age.jpg');
+    background-position: center;
+}
+
+#day2 p {
+    margin: 5px 0; /* Adjusts margin between all paragraphs */
+}
+  
+#day2 p:nth-of-type(2) {
+    margin-bottom: 40px; /* Increases margin after "Ice Breaking Games" */
+}
+  
+#day2 p:nth-of-type(3) {
+    margin-top: 0; /* Removes margin before "晚上" */
+}
+
+#day2 p:nth-of-type(4) {
+    margin-bottom: 40px; /* Increases margin after "Ice Breaking Games" */
+}
+  
+#day2 p:nth-of-type(5) {
+    margin-top: 0; /* Removes margin before "晚上" */
+}
+
+#day3 {
+    background-image: url('images/dark_forest.PNG');
+    background-position: center;
+}
+
+#day3 p {
+    margin: 5px 0; /* Adjusts margin between all paragraphs */
+}
+
+#day3 p:nth-of-type(2) {
+    margin-bottom: 40px; /* Increases margin after "Ice Breaking Games" */
+}
+  
+#day3 p:nth-of-type(3) {
+    margin-top: 0; /* Removes margin before "晚上" */
+}
+
+#day4 {
+    background-image: url('images/ice_fire.jpg');
+    background-position: center;
+}
+
+#day4 p {
+    margin: 5px 0; /* Adjusts margin between all paragraphs */
+}
+
+#day5 {
+    background-image: url('images/shirt.PNG');
+    background-position: center;
+}
+
+#day5 p {
+    margin: 5px 0; /* Adjusts margin between all paragraphs */
+}
+
+#day5 p:nth-of-type(2) {
+    margin-bottom: 40px; /* Increases margin after "Ice Breaking Games" */
+}
+  
+#day5 p:nth-of-type(3) {
+    margin-top: 0; /* Removes margin before "晚上" */
+}
+
+.time {
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.2em; /* Increases the font size */
+    border-bottom: 2px solid #ffffff; /* Adds a bottom border */
+    margin-bottom: 10px; /* Adds space below the element */
+    padding-bottom: 5px; /* Adds space between the text and the border */
+}
+
+
+#cheers {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li hr {
+    border: none;
+    border-top: 1px solid #007aff; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Adjust the spacing as needed */
+  }
+  
+#cheers ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cheers li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cheers h3 {
+  margin: 0;
+  color: #007aff;
+}
+
+#cheers p {
+  margin: 5px 0 0;
+  color: #555555;
+}
+
+#lyrics {
+    margin-top: 40px;
+}
+  
+.lyrics-content {
+    text-align: left;
+    max-width: 600px;
+}
+  
+.lyrics-content p {
+    margin: 5px 0;
+}
+
+.line-spacing {
+    height: 10px; /* Adjust the height as needed for the spacing */
+}
+  
+.audio-controls {
+    margin-top: 20px;
+}
+  
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+  
+  
+
+/* Sponsor section styles */
+#sponsors {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+  
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Ensure text is centered */
+}
+  
+.sponsor img {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+  
+.sponsor-name {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icon-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.material-icons {
+    font-size: 24px;
+    color: #000;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icon-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.material-icons {
+    font-size: 24px;
+    color: #000;
+}
+
+#notification-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px; /* Increase padding if needed */
+    width: 300px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none; /* initially hide the notification box */
+    text-align: center; /* Center align the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+#notification-text {
+    margin: 0;
+    line-height: 1.5; /* Adjust line height for better readability */
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+#notification-box p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+#notification-box p:nth-of-type(3) {
+    margin-bottom: 20px;
+}
+
+#close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #999; /* Close icon color */
+}
+
+#close-icon:hover {
+    color: #666; /* Hover color for close icon */
+}
